@@ -5,6 +5,7 @@ import com.biglietti_teatro.repository.TeatroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TeatroService {
@@ -16,7 +17,7 @@ public class TeatroService {
         return teatroRepository.findAll();
     }
     
-    public Teatro getTeatro(String codTeatro) {
-        return teatroRepository.findById(codTeatro).orElse(null);
+    public Optional<Teatro> getTeatro(String codTeatro) {
+        return teatroRepository.findById(codTeatro);
     }
 }

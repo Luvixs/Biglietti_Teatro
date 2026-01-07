@@ -28,5 +28,15 @@ public class SpettacoloService {
     public List<Spettacolo> getSpettacoliByTeatro(String codTeatro) {
         return spettacoloRepository.findByTeatro_CodTeatro(codTeatro);
     }
+    
+    //salva nuovo spettacolo
+    public Spettacolo saveSpettacolo(Spettacolo spettacolo) {
+        return spettacoloRepository.save(spettacolo);
+    }
+    
+    //elimina spettacolo
+    public void deleteSpettacolo(String id) {
+        spettacoloRepository.deleteById(id);
+    }
 
 }
