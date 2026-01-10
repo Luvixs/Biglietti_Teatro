@@ -11,7 +11,7 @@ import com.biglietti_teatro.service.TeatroService;
 
 @RestController
 @RequestMapping("/api/teatri")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:5173/")
 public class TeatroController {
 	@Autowired
     private TeatroService teatroService;

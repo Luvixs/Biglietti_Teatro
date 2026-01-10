@@ -11,7 +11,7 @@ import com.biglietti_teatro.service.ReplicaService;
 
 @RestController
 @RequestMapping("/api/repliche")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:5173/")
 public class ReplicaController {
 	@Autowired
     private ReplicaService replicaService;
