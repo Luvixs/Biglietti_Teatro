@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 
-const userSlice = createSlice({
+const authSlice = createSlice({
   
   initialState: {},
   reducers: {},
@@ -11,7 +11,7 @@ const userSlice = createSlice({
 });
 
 // Esporta le azioni
-//export const { } = userSlice.actions;
+//export const { } = authSlice.actions;
 
 // Esporta il reducer
-export default userSlice.reducer;
+export default authSlice.reducer;
