@@ -72,7 +72,7 @@ function Login() {
     }
 };
 return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 to-pink-500 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-purple-500 to-pink-500 p-4">
       <div className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md">
         
         {/* Header */}
